@@ -1,0 +1,42 @@
+{
+  "name": "courier-management",
+  "version": "2.0.0",
+  "description": "Shipment management system prototype for Saloodo.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development run-p devtask:**",
+    "devtask:server": "nodemon start.js",
+    "devtask:client": "npm start --prefix client",
+    "start": "NODE_ENV=production node server.js",
+    "test": "NODE_ENV=test mocha --timeout 10000"
+  },
+  "author": "Meryem Yanar",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-runtime": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/register": "^7.27.1",
+    "chai": "^4.4.1",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.6",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "faker": "^5.5.3",
+    "mongodb": "^6.5.2",
+    "mongoose": "^8.3.3",
+    "morgan": "^1.10.0"
+  }
+}
